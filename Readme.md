@@ -33,7 +33,7 @@ A command-line interface application for exploring movies using The Movie Databa
 3. **Set Up Environment Variables**
    Create a `.env` file in the project root:
    ```bash
-   TMDB_API_KEY=your_api_key_here
+   API_KEY=your_api_key_here
    ```
 
 ## Usage
@@ -42,16 +42,16 @@ A command-line interface application for exploring movies using The Movie Databa
 
 ```bash
 # Now Playing Movies
-npm tmdn-app --type playing
+npm tmdb-app --type now_playing
 
 # Popular Movies
-npm tmdn-app --type popular
+ tmdb-app --type popular
 
 # Top Rated Movies
-npm tmdn-app --type top
+ tmdb-app --type top_rated 
 
 # Upcoming Movies
-npm tmdn-app --type upcoming
+ tmdb-app --type upcoming
 ```
 
 <h2>Error Handling</h2>
