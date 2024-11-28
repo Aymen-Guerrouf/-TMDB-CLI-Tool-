@@ -61,10 +61,10 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 <h2>contact</h2>
 
-        <ul>
+  <ul>
 
-            <li>Guerrouf Aymen</li>
+   <li>Guerrouf Aymen</li>
 
-            <li>Email:guerrouf.aymen@gmail.com</li>
+   <li>Email:guerrouf.aymen@gmail.com</li>
 
-        </ul>
+  </ul>
