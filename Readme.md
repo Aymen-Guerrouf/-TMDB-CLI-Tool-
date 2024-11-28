@@ -48,7 +48,7 @@ npm tmdb-app --type playing
 npm tmdb-app --type popular
 
 # Top Rated Movies
-npm tmdb-app --type top
+npm tmdb-app --type top_rated 
 
 # Upcoming Movies
 npm tmdb-app --type upcoming
