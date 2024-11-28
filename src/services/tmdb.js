@@ -40,7 +40,6 @@ export const genre = async (genre) => {
     movies.forEach((movie) => {
       console.log(movie);
     });
-    console.log(movies);
   } catch (error) {
     throw new Error("An error occurred while fetching movies.");
   }

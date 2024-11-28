@@ -72,15 +72,14 @@ export const tmdbCommand = {
           }
           console.log(chalk.green("Fetching movies..."));
           console.log(chalk.green("Genre: " + argv.genre));
-          console.log(chalk.green("Genre ID: " + genres[argv.genre]));
           genre(genres[argv.genre]);
         }
         return true;
       });
   },
   handler: (argv) => {
-    if (!argv.type) {
-      console.log(chalk.yellow("Please provide a type to proceed."));
+    if (!argv.type && !argv.genre) {
+      console.log(chalk.yellow("Please provide a type or genre to proceed."));
       return;
     }
   },
