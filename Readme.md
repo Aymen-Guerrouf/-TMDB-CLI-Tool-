@@ -42,16 +42,16 @@ A command-line interface application for exploring movies using The Movie Databa
 
 ```bash
 # Now Playing Movies
-npm tmdn-app --type playing
+npm tmdb-app --type playing
 
 # Popular Movies
-npm tmdn-app --type popular
+npm tmdb-app --type popular
 
 # Top Rated Movies
-npm tmdn-app --type top
+npm tmdb-app --type top
 
 # Upcoming Movies
-npm tmdn-app --type upcoming
+npm tmdb-app --type upcoming
 ```
 
 <h2>Error Handling</h2>
