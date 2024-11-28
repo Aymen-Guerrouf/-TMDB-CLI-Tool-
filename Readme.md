@@ -1,74 +1,60 @@
-# TMDB CLI Application
+# TMDb CLI Movie Search Application
 
 ## Overview
-
-A command-line interface application for exploring movies using The Movie Database (TMDb) API, built with Node.js and Yargs.
+A command-line interface (CLI) application to search and discover movies using The Movie Database (TMDb) API.
 
 ## Features
-
-- Search movies by different types
-- Supports filtering:
-  - Now Playing Movies
-  - Popular Movies
-  - Top Rated Movies
-  - Upcoming Movies
-
-## Prerequisites
-
-- Node.js (v16.0.0 or later)
-- npm (Node Package Manager)
-- TMDb API Key
+- Search movies by type:
+  - Now playing
+  - Popular
+  - Top rated
+  - Upcoming
+- Filter movies by genre
 
 ## Installation
-
-1. **Clone the Repository**
-   ```bash
-   git clone https://github.com/Aymen-Guerrouf/-TMDB-CLI-Tool-.git
-   cd tmdb-cli
-   ```
-2. **Install Dependencies**
-   ```bash
-   npm install
-   ```
-3. **Set Up Environment Variables**
-   Create a `.env` file in the project root:
-   ```bash
-   API_KEY=your_api_key_here
-   ```
+1. Clone the repository
+2. Run `npm install`
 
 ## Usage
-
-### Basic Commands
-
 ```bash
-# Now Playing Movies
-npm tmdb-app --type now_playing
-
-# Popular Movies
- tmdb-app --type popular
-
-# Top Rated Movies
- tmdb-app --type top_rated 
-
-# Upcoming Movies
- tmdb-app --type upcoming
+node cli.py [options]
 ```
 
-<h2>Error Handling</h2>
-        <ul>
-            <li>Invalid movie type will result in a red error message.</li>
-            <li>Provides helpful guidance on correct usage.</li>
-</ul>
-        <h2>Technologies</h2>
-        <ul>
-            <li>Node.js (v14+ recommended)</li>
-            <li>Yargs (CLI argument parsing)</li>
-            <li>Axios (HTTP requests)</li>
-        </ul>
+### Options
+- `--type, -t`: Search movie type
+  - Allowed values: `playing`, `popular`, `top`, `upcoming`
+- `--genre, -g`: Filter movies by genre
+  - Supported genres: action, adventure, animation, comedy, crime, documentary, drama, family, fantasy, history, horror, music, mystery, romance, science fiction, tv movie, thriller, war, western
+
+### Examples
+```bash
+# Search for popular movies
+node cli.py --type popular
+
+# Search for action movies
+node cli.py --genre action
+```
+
+## Error Handling
+- Requires at least one option (`--type` or `--genre`)
+- Validates input against supported types and genres
+
+## Dependencies
+- chalk: Terminal string styling
+- TMDb API service
+
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss proposed changes.
 <h2>Project URL</h2>
+
 <href>https://roadmap.sh/projects/tmdb-cli</href>
+
 <h2>contact</h2>
+
         <ul>
+
             <li>Guerrouf Aymen</li>
+
             <li>Email:guerrouf.aymen@gmail.com</li>
+
         </ul>
