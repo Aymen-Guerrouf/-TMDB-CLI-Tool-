@@ -45,13 +45,13 @@ A command-line interface application for exploring movies using The Movie Databa
 npm tmdb-app --type playing
 
 # Popular Movies
-npm tmdb-app --type popular
+ tmdb-app --type popular
 
 # Top Rated Movies
-npm tmdb-app --type top_rated 
+ tmdb-app --type top_rated 
 
 # Upcoming Movies
-npm tmdb-app --type upcoming
+ tmdb-app --type upcoming
 ```
 
 <h2>Error Handling</h2>
