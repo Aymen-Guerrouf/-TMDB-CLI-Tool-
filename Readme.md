@@ -42,7 +42,7 @@ A command-line interface application for exploring movies using The Movie Databa
 
 ```bash
 # Now Playing Movies
-npm tmdb-app --type playing
+npm tmdb-app --type now_playing
 
 # Popular Movies
  tmdb-app --type popular
