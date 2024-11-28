@@ -33,7 +33,7 @@ A command-line interface application for exploring movies using The Movie Databa
 3. **Set Up Environment Variables**
    Create a `.env` file in the project root:
    ```bash
-   TMDB_API_KEY=your_api_key_here
+   API_KEY=your_api_key_here
    ```
 
 ## Usage
