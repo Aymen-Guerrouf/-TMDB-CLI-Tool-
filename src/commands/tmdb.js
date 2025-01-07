@@ -37,7 +37,7 @@ export const tmdbCommand = {
       .option("genre", {
         alias: "g",
         type: "string",
-        describe: "Genre of movies",
+        describe: "Genre of movies  (action, comedy, drama, etc.)",
       })
       .check((argv) => {
         if (!argv.type && !argv.genre) {
@@ -55,7 +55,7 @@ export const tmdbCommand = {
           ) {
             throw new Error(
               chalk.red(
-                "Invalid type! Type must be one of: playing, popular, top, upcoming."
+                "Invalid type! Type must be one of: now_playing, popular, top_rated, upcoming."
               )
             );
           }

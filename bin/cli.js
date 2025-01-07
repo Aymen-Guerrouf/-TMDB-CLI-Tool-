@@ -9,7 +9,7 @@ import { tmdbCommand } from "../src/commands/tmdb.js";
 yargs(hideBin(process.argv))
   .usage("Usage: $0 <command> [options]")
   .example(
-    "$0 tmdb-app --type playing",
+    "$0 tmdb-app --type upcoming",
     "Fetches a list of movies that are now playing."
   )
   .option("verbose", {
